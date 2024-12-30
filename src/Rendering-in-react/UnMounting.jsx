@@ -1,17 +1,10 @@
-import { Component } from 'react'
+/* eslint-disable no-unused-vars */
+import React from 'react'
 
-export default class UnMounting extends Component {
-
-
-  componentDidMount() {
-    console.log('Component did mount in Unmounting')
-  }
-
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+function UnMounting() {
+  return (
+    <div>UnMounting</div>
+  )
 }
+
+export default UnMounting

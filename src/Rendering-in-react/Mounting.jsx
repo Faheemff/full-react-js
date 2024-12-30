@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import UnMounting from './UnMounting';
 
 export default class Mounting extends Component {
 
@@ -27,12 +28,24 @@ export default class Mounting extends Component {
       console.log('component Did Update')
     }
   }
+
+  deCrementCount = ()=> {
+    this.setState({count: this.state.count - 1})
+  }
+
+  componentDidUnMount(){
+    console.log('deCreationCount');
+    
+  }
+
+
   render() {
     return (
       <div>
         <h1>Mounting Component  {`${this.state.count}`}</h1>
-
-        <button onClick={this.incrementCount}>click</button>
+        
+        <button number={onClick={this.incrementCount}}>click</button>
+        <button onClick={this.deCrementCount}>click</button>
       </div>
     )
   }
