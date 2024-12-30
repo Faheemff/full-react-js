@@ -18,6 +18,15 @@ export default class Mounting extends Component {
     this.setState({count: this.state.count + 1})
   }
 
+
+  componentDidUpdate() {
+    console.log('component Did Update')
+    if(this.state.count !== this.state.count) {
+      console.log('component Did Update')
+      console.log(this.state.count);
+      console.log('component Did Update')
+    }
+  }
   render() {
     return (
       <div>
