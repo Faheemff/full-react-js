@@ -1,11 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Mounting from './Rendering-in-react/Mounting'
+import List from './Rendering-in-react/List'
 
 const App = () => {
   return (
     <div>
-      <Mounting />
+      {/* <Mounting /> */}
+      <List />
     </div>
   )
 }
