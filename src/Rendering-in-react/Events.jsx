@@ -4,7 +4,9 @@ import React from 'react'
 const Events = () => {
   return (
     <div>
-      
+      <input type="text" />
+      <input type="password" />
+      <input type="email" />
     </div>
   )
 }
