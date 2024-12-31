@@ -4,9 +4,10 @@ import React from 'react'
 const Events = () => {
   return (
     <div>
-      <input type="text" />
-      <input type="password" />
-      <input type="email" />
+      <input onChange={'this is event'} type="text" />
+      <input onMouseEnter={'this is event'} type="password" />
+      <input onMouseLeave={'this is another event'} type="email" />
+      <button type='button'>Click</button>
     </div>
   )
 }
