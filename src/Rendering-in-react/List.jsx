@@ -1,11 +1,13 @@
 function List() {
     const numbers = [1, 2, 3, 4, 5];
     const newNumber = numbers.map((number) => {
-        return number * 2;
+        return number;
     })
     return (
         <ul>
-            <li key={newNumber}>{newNumber}</li>
+            <li key={numbers}>{newNumber.map((e)=> {
+                return e ;
+            })}</li>
         </ul>
     );
 }
