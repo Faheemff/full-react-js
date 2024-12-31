@@ -6,7 +6,7 @@ function List() {
     return (
         <ul>
             <li key={numbers}>{newNumber.map((e)=> {
-                return e ;
+                return e;
             })}</li>
         </ul>
     );

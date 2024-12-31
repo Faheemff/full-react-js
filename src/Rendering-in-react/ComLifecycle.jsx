@@ -6,10 +6,7 @@ const ComLifecycle = () => {
       mounting number 2 mai updating and number 3 mai unmounting hota hai */}
 
 
-constructor(props) {
-  super(props);
-  this.state = { counter: 0 };
-}
+    
 
 
     </div>

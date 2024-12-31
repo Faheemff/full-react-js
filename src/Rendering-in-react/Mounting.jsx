@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import UnMounting from './UnMounting';
+// import UnMounting from './UnMounting';
 
 export default class Mounting extends Component {
 
@@ -44,7 +44,7 @@ export default class Mounting extends Component {
       <div>
         <h1>Mounting Component  {`${this.state.count}`}</h1>
         
-        <button number={onClick={this.incrementCount}}>click</button>
+        <button onClick={this.incrementCount}>click</button>
         <button onClick={this.deCrementCount}>click</button>
       </div>
     )
