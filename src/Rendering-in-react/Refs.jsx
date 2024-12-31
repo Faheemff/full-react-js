@@ -3,10 +3,11 @@ import { useEffect, useRef, useState } from 'react'
 const Refs = () => {
 
   const [number, setNumber] = useState(0)
-  let a = 0;
+  let a = useRef(0);
 
   useEffect(() => {
-    console.log(`Page is Rendering ${a}`);
+    a.current = a.current + 1
+    console.log(`Page is Rendering ${a.current}`);
     
   });
   
@@ -17,9 +18,6 @@ const Refs = () => {
       <button onClick={()=> {
         setNumber(number + 1);
       }}>Click me</button>
-      <button onClick={()=> {
-        a + 1;
-      }}>Click</button>
     </div>
   )
 }
